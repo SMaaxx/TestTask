@@ -175,7 +175,7 @@ class ParamEditor extends React.Component<Props, State> {
   render() {
     const { data, currentPage } = this.state;
 
-    return(
+    return (
       <Container>
         <Panel>
           <ButtonBar>
@@ -204,11 +204,11 @@ class ParamEditor extends React.Component<Props, State> {
                 </Item>
               );
             })}
-          {currentPage === 'structure' && (
+            {currentPage === 'structure' && (
               <pre>
                 {JSON.stringify(this.getModel(), null, 2)}
               </pre>
-          )}
+            )}
           </Content>
         </Panel>
       </Container>
